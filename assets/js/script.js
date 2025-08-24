@@ -47,22 +47,18 @@ const styleActiveNavItem = () => {
 }   
 
 const syncMinuteRefresh = () => {
-    const update = () => {
-        formatTime()
-        formatDate()
-    }
-    update()
+    formatTime()
 
     const now = new Date()
     const msNextMin = (60 - now.getSeconds()) * 1000 - now.getMilliseconds()
 
     setTimeout(() => {
-        update()
         // Update every minute
-        setInterval(update, 60 * 1000)
+        setInterval(formatTime, 60 * 1000)
     }, msNextMin)
 }
 
+formatDate()
 // Align time updates (in minutes)
 syncMinuteRefresh()
 styleActiveNavItem()
