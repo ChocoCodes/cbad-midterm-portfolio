@@ -230,8 +230,8 @@
 
 #about:hover {
     background-color: var(--color-main);
-    color:var(--color-accent);
-    border: 2px solid var(--color-accent);
+    color:var(--color-accent-states);
+    border: 2px solid var(--color-accent-states);
 }
 
 #project {

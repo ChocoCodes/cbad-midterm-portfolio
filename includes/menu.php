@@ -17,7 +17,7 @@
                 <?php 
                     foreach($META as $Key => $Value) {
                         echo "
-                            <li class='sidebar-nav-item fs-3'>
+                            <li class='sidebar-nav-item fs-4'>
                                 <a href='{$Value['page']}'>{$Value['title']}</a>
                             </li>
                         ";

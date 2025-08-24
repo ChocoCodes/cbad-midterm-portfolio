@@ -21,8 +21,8 @@
                             <h1 class="poppins-semibold text-accent lh-base">John Roland </br>Octavio</h1>
                             <p class="w-75 text-paragraph">A precise and analytical CS student passionate about building clean and effective solutions.</p>
                             <div class="d-flex gap-4">
-                                <button id="about" class="hero-btn rounded-5">Learn More</button>
-                                <button id="project" class="hero-btn rounded-5">My Projects</button>
+                                <button id="about" class="hero-btn rounded-5" onclick="window.location.href = 'about.php'">Learn More</button>
+                                <button id="project" class="hero-btn rounded-5" onclick="window.location.href = 'projects.php'">My Projects</button>
                             </div>
                         </div>
                     </div>
