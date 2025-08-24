@@ -259,6 +259,16 @@
     animation: marquee-move-items 10s linear infinite;
 }
 
+.marquee-fadeout {
+    mask-image: linear-gradient(
+        to right,
+        transparent,
+        black 4rem,
+        black calc(100% - 4rem),
+        transparent
+    );
+}
+
 @keyframes marquee-move-items {
     to {
         transform: translateX(-50%);

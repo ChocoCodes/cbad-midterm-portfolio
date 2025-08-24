@@ -31,7 +31,7 @@
                     <!-- Tech Stack Section -->
                     <p class="poppins-medium text-heading fs-2">Tech Stack</p>
                     <!-- Marquee Section -->
-                    <div class="w-100 mx-auto marquee-wrapper">
+                    <div class="w-100 mx-auto marquee-wrapper marquee-fadeout">
                         <div class="marquee-view">
                             <div class="marquee-content d-flex">
                                 <i class="fa-brands fa-react fa-4x icon-blue"></i>
