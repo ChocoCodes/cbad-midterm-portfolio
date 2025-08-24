@@ -6,7 +6,7 @@
     <div id="sidebar-container" class="w-100 d-flex flex-column justify-content-between">
         <!-- Sidebar Header -->
         <div id="sidebar-header" class="d-flex gap-2">
-            <img src="assets/img/logo.svg" alt="Logo">
+            <img src="assets/img/svgs/logo.svg" alt="Logo">
             <p class="fs-4">John</br>Octavio</p>
         </div>
 

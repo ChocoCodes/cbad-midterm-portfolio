@@ -12,6 +12,7 @@
     /* Accent Colors */
     --color-accent: #22C55E;
     --color-accent-states: #16A34C;
+    --color-blue: #3178C6;
 }
 
 /* Poppins Classes */
@@ -123,12 +124,42 @@
   font-style: italic;
 }
 
+/* Utility Styles */
+.active-page {
+    border-right: 5px solid var(--color-accent);
+}
+
+.text-heading {
+    color: var(--text-heading);
+}
+
+.text-subheading {
+    color: var(--text-subheading);
+}
+
+.text-paragraph {
+    color: var(--text-body);
+}
+
+.text-accent {
+    color: var(--text-accent);
+}
+
+.icon-blue {
+    color: var(--color-blue);
+    filter: brightness(0) saturate(100%) invert(43%) sepia(50%) saturate(799%) hue-rotate(171deg) brightness(90%) contrast(89%);
+}
 
 /* Sidebar Styles */
 #sidebar {
     background-color: var(--color-sidebar);
     color: var(--text-subheading);
     padding: 2.5rem 1.25rem;
+    z-index: 0;
+}
+
+#sidebar-container { 
+    z-index: 2;
 }
 
 #sidebar-header img {
@@ -154,7 +185,82 @@
     text-decoration: none;
     color: var(--text-subheading);
 }
-/* Nav-Item border active Styles */
-.active-page {
-    border-right: 5px solid var(--color-accent);
+
+.custom-icon-stack {
+    height: 67.2px;
+}
+
+/* Home - Main Styles */
+.main-container {
+    background-color: var(--color-main);
+    z-index: 0;
+}
+
+.main-content {
+    gap: 3rem;
+    z-index: 2;
+}
+
+.hero {
+    gap: 3.5rem;
+}
+
+#hero-image {
+    width: 375px;
+    height: 375px;
+    object-fit: cover;
+}
+
+.hero-btn {
+    width: 140px;
+    height: 50px;
+    border: none;
+    transition: all 0.4s ease;
+}
+
+#about {
+    background-color: var(--color-accent);
+}
+
+#about:hover {
+    background-color: var(--color-main);
+    color:var(--color-accent);
+    border: 2px solid var(--color-accent);
+}
+
+#project {
+    background-color: var(--color-sidebar);
+    color: var(--text-body);
+}
+
+#project:hover {
+    background-color: var(--text-body);
+    color:var(--color-sidebar);
+    border: 2px solid var(--color-sidebar);
+}
+
+.background-glow {
+    width: var(--glow-width);
+    height: var(--glow-height);
+    background-color: var(--color-accent);
+    filter: blur(28.75px);
+    z-index: 1;
+}
+
+/* Marquee Styles */
+.marquee-view {
+    overflow: clip;
+}
+
+.marquee-content {
+    padding-left: 4.8rem;
+    gap: 4.8rem;
+    width: max-content;
+    animation: marquee-move-items 10s linear infinite;
+}
+
+@keyframes marquee-move-items {
+    to {
+        transform: translateX(-50%);
+    }
 }
