@@ -1,20 +1,68 @@
+const timeField = document.getElementById('time')
 const dateField = document.getElementById('date')
-const DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const navLinks = document.querySelectorAll('.sidebar-nav-item a')
 
 const formatField = (num) => num < 10 ? `0${num}` : num
 
-const formatDate = () => {
+const formatTime = () => {
     const now = new Date()
-    const day = now.getDay()
-
-    const dd = now.getDate()
-    const mm = now.getMonth()
-    const yyyy = now.getFullYear()
-
-    const h = now.getHours()
-    const m = now.getMinutes()
+    const hour = now.getHours() 
+    const minute = now.getMinutes()
+    const prepand = hour < 12 ? 'AM' : 'PM'
+    // Set Military Time (24H) to Standard Time (12H)
+    const standard = hour % 12 || 12
+    timeField.innerText = `${formatField(standard)}:${formatField(minute)} ${prepand} (PHT)`
 }
 
-formatDate()
-// Update every minute
-setInterval(formatDate, 60 * 1000)
+const formatDate = () => {
+    const now = new Date()
+    const formatted = now.toLocaleDateString('en-PH', {
+        weekday: 'long',
+        month: 'short',
+        day: 'numeric',
+        year: 'numeric',
+        timeZone: 'Asia/Manila'
+    })
+
+    dateField.innerText = formatted
+}
+
+/* 
+   Style the right border of the user's current page
+   Get the pathname of the current page and check for the .php page
+   home page is treated as "", so the default page is index.php
+   Add class active-page to show the border in the <li>, else remove class
+*/ 
+const styleActiveNavItem = () => {
+    const pagePath = window.location.pathname
+    const currentPage = pagePath.split("/").pop() || "index.php"
+    navLinks.forEach(nav => {
+        const link = nav.href.split("/").pop()
+        if(currentPage === link) {
+            nav.parentElement.classList.add("active-page")
+        } else {
+            nav.parentElement.classList.remove("active-page")
+        }
+    })
+}   
+
+const syncMinuteRefresh = () => {
+    const update = () => {
+        formatTime()
+        formatDate()
+    }
+    update()
+
+    const now = new Date()
+    const msNextMin = (60 - now.getSeconds()) * 1000 - now.getMilliseconds()
+
+    setTimeout(() => {
+        update()
+        // Update every minute
+        setInterval(update, 60 * 1000)
+    }, msNextMin)
+}
+
+// Align time updates (in minutes)
+syncMinuteRefresh()
+styleActiveNavItem()
