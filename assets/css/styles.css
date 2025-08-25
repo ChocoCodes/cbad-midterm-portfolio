@@ -244,17 +244,18 @@ button {
     width: 140px;
     height: 50px;
     border: 2px solid transparent;
-    transition: all 0.4s ease;
+    transition: background-color 0.4s ease, color 0.4s ease;
 }
 
 #about {
     background-color: var(--color-accent);
+    border: 2px solid transparent;
 }
 
 #about:hover {
     background-color: var(--color-main);
     color:var(--color-accent-states);
-    border: 2px solid var(--color-accent-states);
+    border-color: var(--color-accent-states);
 }
 
 #project {
@@ -265,7 +266,7 @@ button {
 #project:hover {
     background-color: var(--text-body);
     color:var(--color-sidebar);
-    border: 2px solid var(--color-sidebar);
+    border-color: var(--color-sidebar);
 }
 
 .background-glow {
@@ -285,7 +286,7 @@ button {
     padding-left: 4.8rem;
     gap: 4.8rem;
     width: max-content;
-    animation: marquee-move-items 10s linear infinite;
+    animation: marquee-move-items 15s linear infinite;
 }
 
 .marquee-fadeout {
@@ -306,7 +307,7 @@ button {
 
 /* About - Main Styles */
 .about-section,
-.project-section {
+.project-section, .main-content {
     padding: 2.5rem 1.25rem;
 }
 
