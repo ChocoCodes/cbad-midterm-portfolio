@@ -3,6 +3,8 @@ const dateField = document.getElementById('date')
 const navLinks = document.querySelectorAll('.sidebar-nav-item a')
 const experienceSection = document.getElementById('experience')
 const educationSection = document.getElementById('education')
+const experienceBtn = document.getElementById('exp-btn')
+const educationBtn = document.getElementById('edu-btn')
 
 const formatField = (num) => num < 10 ? `0${num}` : num
 
@@ -61,19 +63,29 @@ const syncMinuteRefresh = () => {
 }
 
 const showExperience = () => {
-    experienceSection.classList.remove('d-none');
-    experienceSection.classList.add('d-flex');
-
-    educationSection.classList.remove('d-flex');
-    educationSection.classList.add('d-none');
+    // Toggle experience
+    experienceSection.classList.remove('d-none')
+    experienceSection.classList.add('d-flex')
+    experienceBtn.classList.add('active-section')
+    experienceBtn.classList.remove('default-section')
+    // Disable education
+    educationSection.classList.remove('d-flex')
+    educationSection.classList.add('d-none')
+    educationBtn.classList.remove('active-section')
+    educationBtn.classList.add('default-section')
 }
 
 const showEducation = () => {
-    educationSection.classList.remove('d-none');
-    educationSection.classList.add('d-flex');
-
-    experienceSection.classList.remove('d-flex');
-    experienceSection.classList.add('d-none');
+    // Toggle education
+    educationSection.classList.remove('d-none')
+    educationSection.classList.add('d-flex')
+    educationBtn.classList.add('active-section')
+    educationBtn.classList.remove('default-section')
+    // Disable experience
+    experienceSection.classList.remove('d-flex')
+    experienceSection.classList.add('d-none')
+    experienceBtn.classList.remove('active-section')
+    experienceBtn.classList.add('default-section')
 }
 
 formatDate()
