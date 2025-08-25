@@ -2,7 +2,7 @@
     include_once 'metadata.php';
 ?>
 
-<div id="sidebar" class="col-sm-2 d-flex justify-content-between poppins-regular">
+<div id="sidebar" class="col-sm-2 vh-100 d-flex justify-content-between poppins-regular position-fixed">
     <div id="sidebar-container" class="w-100 d-flex flex-column justify-content-between">
         <!-- Sidebar Header -->
         <div id="sidebar-header" class="d-flex gap-2 align-items-center">

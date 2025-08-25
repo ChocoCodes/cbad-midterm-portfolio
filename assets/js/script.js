@@ -1,6 +1,8 @@
 const timeField = document.getElementById('time')
 const dateField = document.getElementById('date')
 const navLinks = document.querySelectorAll('.sidebar-nav-item a')
+const experienceSection = document.getElementById('experience')
+const educationSection = document.getElementById('education')
 
 const formatField = (num) => num < 10 ? `0${num}` : num
 
@@ -56,6 +58,22 @@ const syncMinuteRefresh = () => {
         // Update every minute
         setInterval(formatTime, 60 * 1000)
     }, msNextMin)
+}
+
+const showExperience = () => {
+    experienceSection.classList.remove('d-none');
+    experienceSection.classList.add('d-flex');
+
+    educationSection.classList.remove('d-flex');
+    educationSection.classList.add('d-none');
+}
+
+const showEducation = () => {
+    educationSection.classList.remove('d-none');
+    educationSection.classList.add('d-flex');
+
+    experienceSection.classList.remove('d-flex');
+    experienceSection.classList.add('d-none');
 }
 
 formatDate()

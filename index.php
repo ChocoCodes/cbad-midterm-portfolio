@@ -15,7 +15,7 @@
                     <p class="poppins-medium text-heading fs-2"><?= $PageHeader ?></p>
                     <!-- Hero Section -->
                     <div class="d-flex hero align-items-center">
-                        <img id="hero-image" class="rounded-circle" src="assets/img/image-port.jpg" alt="Image of John Octavio" >
+                        <img id="hero-image" class="rounded-circle" style="--image-width:375px; --image-height:375px;" src="assets/img/image-port.jpg" alt="Image of John Octavio">
                         <div class="d-flex flex-column gap-3">
                             <h3 class="text-heading poppins-regular">Full Stack Developer</h3>
                             <h1 class="poppins-semibold text-accent lh-base">John Roland </br>Octavio</h1>

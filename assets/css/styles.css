@@ -200,6 +200,7 @@
 .main-container {
     background-color: var(--color-main);
     z-index: 0;
+    margin-left: calc(100% * (2 / 12)); /* Offset 2/12 (col-sm-2) since sidebar is fixed */
 }
 
 .main-content {
@@ -212,8 +213,8 @@
 }
 
 #hero-image {
-    width: 375px;
-    height: 375px;
+    width: var(--image-width);
+    height: var(--image-height);
     object-fit: cover;
 }
 
@@ -279,4 +280,51 @@
     to {
         transform: translateX(-50%);
     }
+}
+
+/* About - Main Styles */
+.about-section {
+    padding: 2.5rem 1.25rem;
+}
+
+.resume-btn {
+    width: 140px;
+    height: 50px;
+    text-decoration: none;
+    color: var(--color-main);
+    background-color: var(--color-accent);
+    transition: all 0.3s ease;
+}
+
+.resume-btn:hover {
+    color: var(--color-accent-states);
+    border: 2px solid var(--color-accent-states);
+    background-color: var(--color-main);
+}
+
+#experience,
+#education {
+    list-style: none;    
+    margin: 0;
+    padding-left: 0;
+}
+
+.experience-item p,
+.education-item p {
+    margin-bottom: 0;
+}
+
+.hobbies-images-container img {
+    width: calc(100% / 3);
+    height: 275px;
+    object-fit: cover;
+}
+
+.contact-icon {
+    color: var(--text-body);
+    transition: transform 0.3s ease;
+}
+
+.contact-icon:hover {
+    transform: translateY(-5px);
 }
