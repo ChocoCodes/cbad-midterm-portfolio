@@ -305,7 +305,8 @@ button {
 }
 
 /* About - Main Styles */
-.about-section {
+.about-section,
+.project-section {
     padding: 2.5rem 1.25rem;
 }
 
@@ -373,4 +374,54 @@ button {
 
 .contact-icon:hover {
     transform: translateY(-5px);
+}
+
+/* Project Styles */
+.project-card {
+    width: 100%;
+    background: var(--color-sidebar);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.project-card img {
+    width: 330px;
+    height: 200px;
+    object-fit: cover;
+}
+
+#github-btn  {
+    text-decoration: none;
+    color: var(--text-subheading);
+    background-color: var(--color-main);
+    transition: background-color 0.3s ease;
+}
+
+#github-btn:hover {
+    color: var(--color-main);
+    background-color: var(--text-subheading);
+}
+
+#demo-btn {
+    text-decoration: none;
+    color: var(--color-main);
+    background-color: var(--color-accent);
+    transition: background-color 0.3s ease;
+}
+
+#demo-btn:hover {
+    background-color: var(--color-accent-states);
+    color: var(--color-main);
+}
+
+#project-stack {
+    color: var(--text-heading);
+    font-size: 1rem;
+}
+
+#project-desc {
+    font-size: 0.75rem;
 }

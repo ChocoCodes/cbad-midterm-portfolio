@@ -11,6 +11,7 @@
     <!-- Append modified timestamp after js/css file path - 
     fix browser caching issues that prevents the js/css file to update --> 
     <link rel="stylesheet" href='assets/css/styles.css?v=<?=filemtime('assets/css/styles.css')?>'>
+    <script defer src="assets/js/project-data.js?v=<?=filemtime('assets/js/project-data.js')?>"></script>
     <script defer src="assets/js/script.js?v=<?=filemtime('assets/js/script.js')?>"></script>
     
     <title><?= $PageTitle ?> | John Octavio</title>

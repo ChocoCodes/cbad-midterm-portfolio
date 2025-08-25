@@ -6,6 +6,35 @@ const educationSection = document.getElementById('education')
 const experienceBtn = document.getElementById('exp-btn')
 const educationBtn = document.getElementById('edu-btn')
 
+
+const loadProjects = () => {
+    const projectContainer = document.getElementById('project-container')
+    projects.forEach(project => {
+        const card = document.createElement("div");
+
+        card.innerHTML = `
+            <img class="rounded-start-3" src=${ project.imgPath } alt=${ project.title }/>
+            <div class="card-content d-flex flex-column justify-content-between gap-1 px-3 py-4">
+                <div class="d-flex flex-column gap-3">
+                    <div class="d-flex flex-column gap-1">
+                        <h3 class="no-mb text-heading poppins-medium fs-5">${ project.title }</h3>
+                        <p id="project-stack" class="no-mb poppins-regular-italic">${ project.stack.join(', ') }</p>
+                        </div>
+                        <p id="project-desc" class="w-100 no-mb text-paragraph poppins-regular fs-6">${ project.description }</p>
+                    </div>
+                <div class="d-flex gap-4 mt-1">
+                    ${ project.githubLink ? `<a id='github-btn' class='rounded-3 py-1 px-4' target='_blank' href=${ project.githubLink }>Github</a>` : "<p class='no-mb text-paragraph fs-6'>Coming Soon!</p>" }
+                    ${ project.demoLink ? `<a id='demo-btn' class='rounded-3 py-1 px-4'target='_blank' href=${ project.demoLink }>Demo</a>` : "" }
+                </div>
+
+            </div>
+        `
+
+        card.className = 'project-card d-flex rounded-3 gap-2'
+        projectContainer.appendChild(card)
+    })
+}
+
 const formatField = (num) => num < 10 ? `0${num}` : num
 
 const formatTime = () => {
@@ -88,7 +117,15 @@ const showEducation = () => {
     experienceBtn.classList.add('default-section')
 }
 
-formatDate()
-// Align time updates (in minutes)
-syncMinuteRefresh()
-styleActiveNavItem()
+document.addEventListener("DOMContentLoaded", () => {
+    const pagePath = window.location.pathname
+    const currentPage = pagePath.split("/").pop()
+    if (currentPage === 'projects.php') {
+        loadProjects()
+    }
+    formatDate()
+    // Align time updates (in minutes)
+    syncMinuteRefresh()
+    styleActiveNavItem()
+
+})
