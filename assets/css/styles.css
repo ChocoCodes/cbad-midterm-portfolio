@@ -334,6 +334,7 @@ button {
     list-style: none;    
     margin: 0;
     padding-left: 0;
+    height: 220px;
 }
 
 .experience-item p,
