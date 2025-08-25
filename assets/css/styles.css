@@ -159,7 +159,7 @@ button {
     background-color: var(--color-sidebar);
     color: var(--text-subheading);
     padding: 2.5rem 1.25rem;
-    z-index: 0;
+    z-index: 2;
 }
 
 #sidebar-container { 
@@ -221,13 +221,13 @@ button {
 /* Home - Main Styles */
 .main-container {
     background-color: var(--color-main);
-    z-index: 0;
+    z-index: 1;
     margin-left: calc(100% * (2 / 12)); /* Offset 2/12 (col-sm-2) since sidebar is fixed */
 }
 
 .main-content {
     gap: 3rem;
-    z-index: 2;
+    z-index: 3;
 }
 
 .hero {
@@ -273,7 +273,7 @@ button {
     height: var(--glow-height);
     background-color: var(--color-accent);
     filter: blur(28.75px);
-    z-index: 1;
+    z-index: 2;
 }
 
 /* Marquee Styles */

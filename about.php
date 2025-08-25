@@ -38,6 +38,7 @@
                             </div>
                         </div>
                     </div>
+                    <div style="--glow-width: 23rem; --glow-height: 23rem; left: 3%; bottom: 30%;" class="background-glow position-absolute rounded-circle"></div>
                     <!-- Experience/Education Container --> 
                     <div class="d-flex flex-column gap-4">
                         <div id="toggle-button-container" class="w-100 d-flex gap-2 justify-content-between rounded-pill p-2">
