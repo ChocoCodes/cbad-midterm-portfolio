@@ -85,12 +85,30 @@
                         </ul>
                     </div>
                     <!-- Hobbies Container --> 
-                    <div class="d-flex flex-column gap-2">
+                    <div class="d-flex flex-column gap-2 overflow-y-hidden">
                         <p class="poppins-medium text-heading fs-2">Hobbies</p>
-                        <div class="w-100 d-flex hobbies-images-container">
-                            <img src="assets/img/code.jpg" alt="Coding">
-                            <img src="assets/img/basketball.jpg" alt="Basketball">
-                            <img src="assets/img/lego.jpg" alt="Lego">
+                        <div class="w-100 d-flex">
+                            <div class="hobby position-relative">
+                                <img src="assets/img/code.jpg" alt="Coding">
+                                <div class="overlay position-absolute w-100 h-100">
+                                    <h2 class="poppins-semibold text-subheading px-3 py-2">CODING</h2>
+                                    <p class="px-3 poppins-regular text-paragraph fs-6">Currently finishing my Harvard CS50x final project - Expense Tracking System.</p>
+                                </div>
+                            </div>
+                            <div class="hobby position-relative">
+                                <img src="assets/img/basketball.jpg" alt="Basketball">
+                                <div class="overlay position-absolute">
+                                    <h2 class="poppins-semibold text-subheading px-3 py-2">BASKETBALL</h2>
+                                    <p class="px-3 poppins-regular text-paragraph fs-6">Played under the UNO-R Rams basketball team (2017-2023).</p>
+                                </div>
+                            </div>
+                            <div class="hobby position-relative">
+                                <img src="assets/img/lego.jpg" alt="Lego">
+                                <div class="overlay position-absolute">
+                                    <h2 class="poppins-semibold text-subheading px-3 py-2">LEGO</h2>
+                                    <p class="px-3 poppins-regular text-paragraph fs-6">I like to build LEGO cars when I have free time (and money)!</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

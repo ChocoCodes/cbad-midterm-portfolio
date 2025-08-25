@@ -341,10 +341,28 @@ button {
     margin-bottom: 0;
 }
 
-.hobbies-images-container img {
+.hobby {
     width: calc(100% / 3);
+    cursor: pointer;
+}
+
+.hobby img {
+    width: 100%;
     height: 275px;
     object-fit: cover;
+}
+
+.overlay {
+    opacity: 0;
+    inset: 0;
+    background-color: rgba(17, 17, 17, 0.4);
+    transform: translateY(100%);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.hobby:hover .overlay{
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .contact-icon {
