@@ -222,7 +222,7 @@ button {
 .main-container {
     background-color: var(--color-main);
     z-index: 1;
-    margin-left: 0;
+    margin-left: calc(100% * (2 / 12));
 }
 
 .main-content {
@@ -430,14 +430,13 @@ button {
 }
 
 /* Media Queries */
-@media(min-width: 576px) {
+@media(min-width: 768px) {
     #sidebar {
         background-color: var(--color-sidebar);
-        position: fixed;
         height: 100vh;
     }
 
     .main-container {
-        margin-left: calc(100% * (2 / 12)); /* Offset 2/12 (col-sm-2) since sidebar is fixed */
+        margin-left: 0;
     }
 }
