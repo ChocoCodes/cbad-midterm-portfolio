@@ -150,8 +150,8 @@ button {
 }
 
 .icon-blue {
-    color: var(--color-blue);
-    filter: brightness(0) saturate(100%) invert(43%) sepia(50%) saturate(799%) hue-rotate(171deg) brightness(90%) contrast(89%);
+    color: var(--color-accent);
+    filter: brightness(0) saturate(100%) invert(53%) sepia(84%) saturate(419%) hue-rotate(89deg) brightness(98%) contrast(94%);
 }
 
 /* Sidebar Styles */
@@ -425,4 +425,25 @@ button {
 
 #project-desc {
     font-size: 0.75rem;
+}
+
+/* Media Queries */
+@media(max-width: 576px) {
+    .sm-pos-static {
+        display: static !important;
+    }
+    
+    .sm-hide-glow {
+        display: none;
+    }
+
+    .sm-no-ml {
+        margin-left: 0 !important;
+    }
+}
+
+@media(min-width: 768px) {
+    .lg-full-screen {
+        height: 100vh;
+    }
 }

@@ -6,8 +6,8 @@
     include_once 'includes/head.php';
 ?>
     <?php include_once 'includes/menu.php'; ?>
-    <div style="--glow-width: 23rem; --glow-height: 23rem; top: -10%; right: -10%;" class="background-glow position-absolute rounded-circle"></div>
-    <div class="col-sm-10 main-container overflow-y-auto overflow-x-hidden d-flex justify-content-between align-items-center">
+    <div style="--glow-width: 23rem; --glow-height: 23rem; top: -10%; right: -10%;" class="background-glow position-absolute rounded-circle sm-hide-glow"></div>
+    <div class="col-sm-10 main-container overflow-y-auto overflow-x-hidden d-flex justify-content-between align-items-center sm-no-ml lg-full-screen">
         <div class="main-content w-75 mx-auto d-flex flex-column">
             <div class="d-flex gap-3 flex-column">
                 <!-- Page Header Section --> 
