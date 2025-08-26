@@ -17,3 +17,4 @@
     <title><?= $PageTitle ?> | John Octavio</title>
 </head>
 <body class="container-fluid">
+    <div class="row min-vh-100 poppins-regular position-relative overflow-x-hidden">

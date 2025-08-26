@@ -117,6 +117,11 @@ const showEducation = () => {
     experienceBtn.classList.add('default-section')
 }
 
+const appendToolTips = () => {
+    const tooltipsEl = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    tooltipsEl.forEach(tooltipEl => new bootstrap.Tooltip(tooltipEl))
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     const pagePath = window.location.pathname
     const currentPage = pagePath.split("/").pop()
@@ -126,6 +131,6 @@ document.addEventListener("DOMContentLoaded", () => {
     formatDate()
     // Align time updates (in minutes)
     syncMinuteRefresh()
+    appendToolTips()
     styleActiveNavItem()
-
 })
