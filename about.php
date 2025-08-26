@@ -37,12 +37,12 @@
                         </div>
                     </div>
                 </div>
-                <div style="--glow-width: 23rem; --glow-height: 23rem; left: 3%; bottom: 30%;" class="background-glow position-absolute rounded-circle"></div>
+                <div style="--glow-width: 20rem; --glow-height: 20rem; left: 3%; bottom: 35%;" class="background-glow position-absolute rounded-circle"></div>
                 <!-- Experience/Education Container --> 
                 <div class="d-flex flex-column gap-4">
-                    <div id="toggle-button-container" class="w-100 d-flex gap-2 justify-content-between rounded-pill p-2">
-                        <button id="exp-btn" class="w-50 active-section rounded-pill fs-4 no-btn-border" onclick="showExperience()">Experience</button>
-                        <button id="edu-btn" class="w-50 default-section rounded-pill fs-4 no-btn-border" onclick="showEducation()">Education</button>
+                    <div id="toggle-button-container" class="w-100 d-flex gap-2 justify-content-between rounded-3 p-2">
+                        <button id="exp-btn" class="w-50 active-section rounded-3 fs-4 no-btn-border" onclick="showExperience()">Experience</button>
+                        <button id="edu-btn" class="w-50 default-section rounded-3 fs-4 no-btn-border" onclick="showEducation()">Education</button>
                     </div>
                     <ul id="experience" class="w-100 d-flex flex-column gap-4">
                         <li class="d-flex flex-column experience-item">

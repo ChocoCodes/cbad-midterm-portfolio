@@ -7,13 +7,13 @@
 ?>
     <?php include_once 'includes/menu.php'; ?>
     <div style="--glow-width: 23rem; --glow-height: 23rem; top: -10%; right: -10%;" class="background-glow position-absolute rounded-circle sm-hide-glow"></div>
-    <div class="col-sm-10 main-container overflow-y-auto overflow-x-hidden d-flex justify-content-between align-items-center sm-no-ml lg-full-screen">
+    <div class="col-sm-10 main-container overflow-y-auto overflow-x-hidden d-flex justify-content-between align-items-center">
         <div class="main-content w-75 mx-auto d-flex flex-column">
             <div class="d-flex gap-3 flex-column">
                 <!-- Page Header Section --> 
                 <p class="poppins-medium text-heading fs-2"><?= $PageHeader ?></p>
                 <!-- Hero Section -->
-                <div class="d-flex hero align-items-center">
+                <div class="d-flex hero align-items-center flex-column flex-md-row">
                     <img id="hero-image" class="rounded-circle" style="--image-width:375px; --image-height:375px;" src="assets/img/image-port.jpg" alt="Image of John Octavio">
                     <div class="d-flex flex-column gap-3">
                         <h3 class="text-heading poppins-regular">Full Stack Developer</h3>
