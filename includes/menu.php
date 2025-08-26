@@ -2,12 +2,12 @@
     include_once 'metadata.php';
 ?>
 
-<div id="sidebar" class="col-sm-2 d-md-flex justify-content-between poppins-regular position-fixed">
+<div id="sidebar" class="col-12 col-sm-2 d-md-flex justify-content-between poppins-regular position-static position-md-fixed">
     <div id="sidebar-container" class="w-100 h-100 d-flex flex-column justify-content-between">
         <!-- Sidebar Header -->
         <div id="sidebar-header" class="d-flex gap-2 align-items-center">
             <img src="assets/img/svgs/logo.svg" alt="Logo">
-            <p class="fs-4">John</br>Octavio</p>
+            <p class="m-0 fs-4">John</br>Octavio</p>
         </div>
 
         <!-- Sidebar Footer -->

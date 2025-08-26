@@ -6,8 +6,8 @@
     include_once 'includes/head.php';
 ?>
     <?php include_once 'includes/menu.php'; ?>
-    <div style="--glow-width: 23rem; --glow-height: 23rem; top: -10%; right: -10%;" class="background-glow position-absolute rounded-circle sm-hide-glow"></div>
-    <div class="col-sm-10 main-container overflow-y-auto overflow-x-hidden d-flex justify-content-between align-items-center">
+    <div style="--glow-width: 23rem; --glow-height: 23rem; --glow-alpha: 0.85; top: -10%; right: -10%;" class="background-glow position-absolute rounded-circle d-none d-md-block"></div>
+    <div class="col-12 col-sm-10 main-container overflow-y-auto overflow-x-hidden d-flex justify-content-between align-items-center">
         <div class="main-content w-75 mx-auto d-flex flex-column">
             <div class="d-flex gap-3 flex-column">
                 <!-- Page Header Section --> 
@@ -15,11 +15,11 @@
                 <!-- Hero Section -->
                 <div class="d-flex hero align-items-center flex-column flex-md-row">
                     <img id="hero-image" class="rounded-circle" style="--image-width:375px; --image-height:375px;" src="assets/img/image-port.jpg" alt="Image of John Octavio">
-                    <div class="d-flex flex-column gap-3">
-                        <h3 class="text-heading poppins-regular">Full Stack Developer</h3>
-                        <h1 class="poppins-semibold text-accent lh-base">John Roland </br>Octavio</h1>
-                        <p class="w-75 text-paragraph">A precise and analytical CS student passionate about building clean and effective solutions.</p>
-                        <div class="d-flex gap-4">
+                    <div class="d-flex flex-column gap-3 text-center text-md-start">
+                        <h3 class="text-heading poppins-regular mb-0">Full Stack Developer</h3>
+                        <h1 class="poppins-semibold text-accent lh-base mb-0">John Roland </br>Octavio</h1>
+                        <p class="w-75 text-paragraph mx-auto mb-0 mx-md-0">A precise and analytical CS student passionate about building clean and effective solutions.</p>
+                        <div class="d-flex gap-4 mx-auto mx-md-0">
                             <button id="about" class="hero-btn rounded-5" onclick="window.location.href = 'about.php'">Learn More</button>
                             <button id="project" class="hero-btn rounded-5" onclick="window.location.href = 'projects.php'">My Projects</button>
                         </div>

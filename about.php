@@ -6,7 +6,7 @@
     include_once 'includes/head.php';
 ?>
     <?php include_once 'includes/menu.php'; ?>
-    <div style="--glow-width: 23rem; --glow-height: 23rem; top: -10%; right: -10%;" class="background-glow position-absolute rounded-circle"></div>
+    <div style="--glow-width: 23rem; --glow-height: 23rem; --glow-alpha: 0.85; top: -10%; right: -10%;" class="background-glow position-absolute rounded-circle"></div>
     <div class="col-sm-10 main-container overflow-x-hidden d-flex justify-content-between align-items-center">
         <div class="main-content about-section w-75 mx-auto d-flex flex-column overflow-y-auto">
             <div class="d-flex gap-5 flex-column">
@@ -37,7 +37,7 @@
                         </div>
                     </div>
                 </div>
-                <div style="--glow-width: 20rem; --glow-height: 20rem; left: 3%; bottom: 35%;" class="background-glow position-absolute rounded-circle"></div>
+                <div style="--glow-width: 20rem; --glow-height: 20rem; --glow-alpha: 0.65; left: 3%; bottom: 35%;" class="background-glow position-absolute rounded-circle"></div>
                 <!-- Experience/Education Container --> 
                 <div class="d-flex flex-column gap-4">
                     <div id="toggle-button-container" class="w-100 d-flex gap-2 justify-content-between rounded-3 p-2">
