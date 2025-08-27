@@ -132,8 +132,15 @@ document.addEventListener("DOMContentLoaded", () => {
     // Align time updates (in minutes)
     syncMinuteRefresh()
     appendToolTips()
+})
+
+window.addEventListener("resize", () => {
     // Style only on 768px above
     if (window.innerWidth > 768) {
         styleActiveNavItem()
+    } else {
+        navLinks.forEach(nav => {
+            nav.parentElement.classList.remove("active-page")
+        })
     }
 })
