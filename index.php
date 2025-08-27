@@ -4,17 +4,17 @@
     $PageHeader = $META['home']['header'];
 
     include_once 'includes/head.php';
+    include_once 'includes/menu.php';
 ?>
-    <?php include_once 'includes/menu.php'; ?>
-    <div class="col-12 col-md-10 main-container overflow-y-auto overflow-x-hidden position-relative d-flex justify-content-between align-items-center">
+    <div class="col-12 col-md-10 main-container overflow-y-auto overflow-x-hidden position-relative d-flex justify-content-between align-items-center p-3">
         <div style="--glow-width: 23rem; --glow-height: 23rem; --glow-alpha: 0.85; top: -20%; right: -10%;" class="background-glow position-absolute rounded-circle d-none d-md-block"></div>
         <div class="main-content w-75 mx-auto d-flex flex-column">
-            <div class="d-flex gap-3 flex-column">
+            <div class="d-flex gap-3 flex-column align-items-center">
                 <!-- Page Header Section --> 
                 <p class="poppins-medium text-heading fs-2"><?= $PageHeader ?></p>
                 <!-- Hero Section -->
                 <div class="d-flex hero align-items-center flex-column flex-md-row">
-                    <img id="hero-image" class="rounded-circle" style="--image-width:375px; --image-height:375px;" src="assets/img/image-port.jpg" alt="Image of John Octavio">
+                    <img id="hero-image" class="rounded-circle" src="assets/img/image-port.jpg" alt="Image of John Octavio">
                     <div class="d-flex flex-column gap-3 text-center text-md-start">
                         <h3 class="text-heading poppins-regular mb-0">Full Stack Developer</h3>
                         <h1 class="poppins-semibold text-accent lh-base mb-0">John Roland </br>Octavio</h1>
@@ -33,27 +33,27 @@
                 <div class="w-100 mx-auto marquee-wrapper marquee-fadeout">
                     <div class="marquee-view">
                         <div class="marquee-content d-flex">
-                            <i data-bs-toggle="tooltip" title="React" class="fa-brands fa-react fa-4x icon-blue"></i>
-                            <img data-bs-toggle="tooltip" title="Next.js" class="custom-icon-stack icon-blue" src="assets/img/svgs/next-js.svg" alt="NextJS">
-                            <img data-bs-toggle="tooltip" title="TypeScript" class="custom-icon-stack icon-blue" src="assets/img/svgs/typescript.svg" alt="TypeScript">
-                            <i data-bs-toggle="tooltip" title="JavaScript"class="fa-brands fa-square-js fa-4x icon-blue"></i>
-                            <i data-bs-toggle="tooltip" title="HTML" class="fa-brands fa-html5 fa-4x icon-blue"></i>
-                            <i data-bs-toggle="tooltip" title="CSS" class="fa-brands fa-css3-alt fa-4x icon-blue"></i>
-                            <img data-bs-toggle="tooltip" title="MySQL" class="custom-icon-stack icon-blue" src="assets/img/svgs/mysql.svg" alt="MySQL">
-                            <i data-bs-toggle="tooltip" title="Python" class="fa-brands fa-python fa-4x icon-blue"></i>
-                            <i data-bs-toggle="tooltip" title="Github" class="fa-brands fa-github fa-4x icon-blue"></i>
-                            <img data-bs-toggle="tooltip" title="Arduino" class="custom-icon-stack icon-blue" src="assets/img/svgs/arduino.svg" alt="Arduino">
+                            <i data-bs-toggle="tooltip" title="React" class="fa-brands fa-react fa-4x icon-accent"></i>
+                            <img data-bs-toggle="tooltip" title="Next.js" class="custom-icon-stack icon-accent" src="assets/img/svgs/next-js.svg" alt="NextJS">
+                            <img data-bs-toggle="tooltip" title="TypeScript" class="custom-icon-stack icon-accent" src="assets/img/svgs/typescript.svg" alt="TypeScript">
+                            <i data-bs-toggle="tooltip" title="JavaScript"class="fa-brands fa-square-js fa-4x icon-accent"></i>
+                            <i data-bs-toggle="tooltip" title="HTML" class="fa-brands fa-html5 fa-4x icon-accent"></i>
+                            <i data-bs-toggle="tooltip" title="CSS" class="fa-brands fa-css3-alt fa-4x icon-accent"></i>
+                            <img data-bs-toggle="tooltip" title="MySQL" class="custom-icon-stack icon-accent" src="assets/img/svgs/mysql.svg" alt="MySQL">
+                            <i data-bs-toggle="tooltip" title="Python" class="fa-brands fa-python fa-4x icon-accent"></i>
+                            <i data-bs-toggle="tooltip" title="Github" class="fa-brands fa-github fa-4x icon-accent"></i>
+                            <img data-bs-toggle="tooltip" title="Arduino" class="custom-icon-stack icon-accent" src="assets/img/svgs/arduino.svg" alt="Arduino">
                             <!-- Duplicates -->
-                            <i aria-hidden="true" data-bs-toggle="tooltip" title="React" class="fa-brands fa-react fa-4x icon-blue"></i>
-                            <img aria-hidden="true" data-bs-toggle="tooltip" title="Next.js" class="custom-icon-stack icon-blue" src="assets/img/svgs/next-js.svg" alt="NextJS">
-                            <img aria-hidden="true"  data-bs-toggle="tooltip" title="TypeScript" class="custom-icon-stack icon-blue" src="assets/img/svgs/typescript.svg" alt="TypeScript">
-                            <i aria-hidden="true"  data-bs-toggle="tooltip" title="JavaScript"class="fa-brands fa-square-js fa-4x icon-blue"></i>
-                            <i aria-hidden="true" data-bs-toggle="tooltip" title="HTML" class="fa-brands fa-html5 fa-4x icon-blue"></i>
-                            <i aria-hidden="true" data-bs-toggle="tooltip" title="CSS" class="fa-brands fa-css3-alt fa-4x icon-blue"></i>
-                            <img aria-hidden="true"  data-bs-toggle="tooltip" title="MySQL" class="custom-icon-stack icon-blue" src="assets/img/svgs/mysql.svg" alt="MySQL">
-                            <i aria-hidden="true" data-bs-toggle="tooltip" title="Python" class="fa-brands fa-python fa-4x icon-blue"></i>
-                            <i aria-hidden="true"  data-bs-toggle="tooltip" title="Github" class="fa-brands fa-github fa-4x icon-blue"></i>
-                            <img aria-hidden="true"  data-bs-toggle="tooltip" title="Arduino" class="custom-icon-stack icon-blue" src="assets/img/svgs/arduino.svg" alt="Arduino">
+                            <i aria-hidden="true" data-bs-toggle="tooltip" title="React" class="fa-brands fa-react fa-4x icon-accent"></i>
+                            <img aria-hidden="true" data-bs-toggle="tooltip" title="Next.js" class="custom-icon-stack icon-accent" src="assets/img/svgs/next-js.svg" alt="NextJS">
+                            <img aria-hidden="true"  data-bs-toggle="tooltip" title="TypeScript" class="custom-icon-stack icon-accent" src="assets/img/svgs/typescript.svg" alt="TypeScript">
+                            <i aria-hidden="true"  data-bs-toggle="tooltip" title="JavaScript"class="fa-brands fa-square-js fa-4x icon-accent"></i>
+                            <i aria-hidden="true" data-bs-toggle="tooltip" title="HTML" class="fa-brands fa-html5 fa-4x icon-accent"></i>
+                            <i aria-hidden="true" data-bs-toggle="tooltip" title="CSS" class="fa-brands fa-css3-alt fa-4x icon-accent"></i>
+                            <img aria-hidden="true"  data-bs-toggle="tooltip" title="MySQL" class="custom-icon-stack icon-accent" src="assets/img/svgs/mysql.svg" alt="MySQL">
+                            <i aria-hidden="true" data-bs-toggle="tooltip" title="Python" class="fa-brands fa-python fa-4x icon-accent"></i>
+                            <i aria-hidden="true"  data-bs-toggle="tooltip" title="Github" class="fa-brands fa-github fa-4x icon-accent"></i>
+                            <img aria-hidden="true"  data-bs-toggle="tooltip" title="Arduino" class="custom-icon-stack icon-accent" src="assets/img/svgs/arduino.svg" alt="Arduino">
                         </div>
                     </div>
                 </div>

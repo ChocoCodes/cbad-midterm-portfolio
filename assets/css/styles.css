@@ -149,7 +149,7 @@ button {
     color: var(--text-accent);
 }
 
-.icon-blue {
+.icon-accent {
     color: var(--color-accent);
     filter: brightness(0) saturate(100%) invert(53%) sepia(84%) saturate(419%) hue-rotate(89deg) brightness(98%) contrast(94%);
 }
@@ -158,7 +158,7 @@ button {
 #sidebar {
     background-color: var(--color-sidebar);
     color: var(--text-subheading);
-    padding: 2.5rem 1.25rem;
+    padding: 1.75rem 1.25rem;
     z-index: 2;
 }
 
@@ -237,6 +237,10 @@ button {
     width: var(--image-width);
     height: var(--image-height);
     object-fit: cover;
+
+    /* lg screens */
+    --image-width: 180px;
+    --image-height: 180px;
 }
 
 .hero-btn {
@@ -288,6 +292,16 @@ button {
     animation: marquee-move-items 15s linear infinite;
 }
 
+.marquee-content i,
+.marquee-content img {
+    transition: transform 0.3s ease;
+}
+
+.marquee-content i:hover, 
+.marquee-content img:hover {
+    transform: translateY(-3px);
+}
+
 .marquee-fadeout {
     mask-image: linear-gradient(
         to right,
@@ -309,6 +323,10 @@ button {
 .project-section, 
 .main-content {
     padding: 2.5rem 1.25rem;
+}
+
+#intro {
+    width: 90%;
 }
 
 .resume-btn {
@@ -336,7 +354,6 @@ button {
     list-style: none;    
     margin: 0;
     padding-left: 0;
-    height: 220px;
 }
 
 .experience-item p,
@@ -345,7 +362,6 @@ button {
 }
 
 .hobby {
-    width: calc(100% / 3);
     cursor: pointer;
 }
 
@@ -434,9 +450,29 @@ button {
         background-color: var(--color-sidebar);
         height: 100vh;
         position: fixed;
+        padding: 2.5rem 1.25rem;
     }
 
     .main-container {
         margin-left: calc(100% * (2 / 12));
+    }
+
+    #hero-image {
+        --image-width: 230px;
+        --image-height: 230px;
+    }
+
+    .hobby {
+        width: calc(100% / 3);
+    }
+
+
+    #experience,
+    #education {
+        height: 250px;
+    }
+
+    .about-section {
+        width: 75%;
     }
 }

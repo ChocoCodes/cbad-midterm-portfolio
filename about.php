@@ -4,23 +4,24 @@
     $PageHeader = $META['about']['header'];
 
     include_once 'includes/head.php';
+    include_once 'includes/menu.php';
 ?>
-    <?php include_once 'includes/menu.php'; ?>
     <div class="col-md-10 main-container overflow-x-hidden d-flex justify-content-between align-items-center">
-        <div class="main-content about-section w-75 mx-auto d-flex flex-column overflow-y-auto position-relative">
-            <div style="--glow-width: 23rem; --glow-height: 23rem; --glow-alpha: 0.85; top: -10%; right: -10%;" class="background-glow position-absolute rounded-circle"></div>
-            <div class="d-flex gap-5 flex-column">
+        <div style="--glow-width: 23rem; --glow-height: 23rem; --glow-alpha: 0.85; top: -10%; right: -10%;" class="background-glow position-absolute rounded-circle"></div>
+        <div style="--glow-width: 20rem; --glow-height: 20rem; --glow-alpha: 0.65; left: 3%; bottom: 35%;" class="background-glow position-absolute rounded-circle d-none d-md-block"></div>
+        <div class="main-content about-section mx-auto d-flex flex-column overflow-y-auto position-relative">
+            <div class="d-flex gap-3 flex-column">
+                <p class="poppins-medium text-heading fs-2"><?= $PageHeader ?></p>
                 <!-- Intro Container --> 
-                <div class="d-flex gap-3 flex-column">
+                <div class="d-flex gap-3 flex-column align-items-center">
                     <!-- Page Header Section --> 
-                    <p class="poppins-medium text-heading fs-2"><?= $PageHeader ?></p>
-                    <div id="intro" class="d-flex align-items-center gap-5">
-                        <img id="hero-image" style="--image-width: 230px; --image-height: 230px;" class="rounded-circle" src="assets/img/image-port.jpg" alt="Image of John Octavio">
-                        <div class="d-flex flex-column gap-2">
-                            <h3 class="poppins-semibold text-accent fs-2 no-mb">John Roland Octavio</h3>
-                            <h4 class="poppins-medium text-subheading">Third Year CS Student</h4>
+                    <div id="intro" class="w-md-75 d-flex flex-column flex-md-row align-items-center gap-5">
+                        <img id="hero-image" class="rounded-circle" src="assets/img/image-port.jpg" alt="Image of John Octavio">
+                        <div class="d-flex flex-column justify-content-center gap-2 p-2">
+                            <h3 class="poppins-semibold text-accent fs-3 fs-md-2 no-mb">John Roland Octavio</h3>
+                            <h4 class="poppins-medium text-subheading fs-4 fs-md-5">Third Year CS Student</h4>
                             <p class="text-paragraph fs-6">Over the past 3 years, I’ve built projects using React, TypeScript, and SQL, including dynamic web apps and embedded systems.</p>
-                            <div class="d-flex align-items-center gap-4">
+                            <div class="d-flex mx-auto mx-md-0 align-items-center gap-4">
                                 <a class="rounded-5 d-flex gap-2 justify-content-center align-items-center resume-btn p-2" href="assets/files/resume.pdf" target="_blank">
                                     Resume<span><i class="fa-solid fa-download"></i></span>
                                 </a>
@@ -37,7 +38,6 @@
                         </div>
                     </div>
                 </div>
-                <div style="--glow-width: 20rem; --glow-height: 20rem; --glow-alpha: 0.65; left: 3%; bottom: 35%;" class="background-glow position-absolute rounded-circle"></div>
                 <!-- Experience/Education Container --> 
                 <div class="d-flex flex-column gap-4">
                     <div id="toggle-button-container" class="w-100 d-flex gap-2 justify-content-between rounded-3 p-2">
@@ -50,21 +50,21 @@
                                 <p class="fs-5 poppins-medium">Chief Technology Officer</p>
                                 <p class="fs-6">Oct 2024 - Present</p>
                             </div>
-                            <p class="poppins-regular-italic text-paragraph">Google Developer Groups on Campus - USLS</p>
+                            <p class="poppins-regular-italic text-paragraph w-50">Google Developer Groups on Campus - USLS</p>
                         </li>
                         <li class="d-flex flex-column experience-item">
                             <div class="d-flex justify-content-between poppins-regular text-subheading">
                                 <p class="fs-5 poppins-medium">Web Development Lead</p>
                                 <p class="fs-6">Aug 2024 - Oct 2024</p>
                             </div>
-                            <p class="poppins-regular-italic text-paragraph">Google Developer Groups on Campus - USLS</p>
+                            <p class="poppins-regular-italic text-paragraph w-50">Google Developer Groups on Campus - USLS</p>
                         </li>
                         <li class="d-flex flex-column experience-item">
                             <div class="d-flex justify-content-between poppins-regular text-subheading">
                                 <p class="fs-5 poppins-medium">Prototype Development Head</p>
                                 <p class="fs-6">Jan 2023 - Mar 2023</p>
                             </div>
-                            <p class="poppins-regular-italic text-paragraph">UNO-R Capstone Project</p>
+                            <p class="poppins-regular-italic text-paragraph w-50">UNO-R Capstone Project</p>
                         </li>
                     </ul>
                     <ul id="education" class="w-100 d-none flex-column gap-4">
@@ -73,21 +73,21 @@
                                 <p class="fs-5 poppins-medium">University of St. La Salle</p>
                                 <p class="fs-6">Expected June 2027</p>
                             </div>
-                            <p class="poppins-regular-italic text-paragraph">Bachelor of Science in Computer Science Major in Game Development</p>
+                            <p class="poppins-regular-italic text-paragraph w-50">Bachelor of Science in Computer Science Major in Game Development</p>
                         </li>
                         <li class="d-flex flex-column education-item">
                             <div class="d-flex justify-content-between poppins-regular text-subheading">
                                 <p class="fs-5 poppins-medium">University of Negros Occidental-Recoletos</p>
                                 <p class="fs-6">June 2017 - May 2023</p>
                             </div>
-                            <p class="poppins-regular-italic text-paragraph">STEM - Engineering and Information Technology</p>
+                            <p class="poppins-regular-italic text-paragraph w-50">STEM - Engineering and Information Technology</p>
                         </li>
                     </ul>
                 </div>
                 <!-- Hobbies Container --> 
-                <div class="d-flex flex-column gap-2 overflow-y-hidden">
-                    <p class="poppins-medium text-heading fs-2">Hobbies</p>
-                    <div class="w-100 d-flex">
+                <div class="d-flex flex-column gap-4 overflow-y-hidden">
+                    <p class="poppins-medium text-heading fs-2 no-mb">Hobbies</p>
+                    <div class="w-100 d-flex flex-column flex-md-row">
                         <div class="hobby position-relative">
                             <img class="rounded-start-4" src="assets/img/code.jpg" alt="Coding">
                             <div class="overlay position-absolute w-100 h-100">
