@@ -13,24 +13,23 @@ const loadProjects = () => {
         const card = document.createElement("div");
 
         card.innerHTML = `
-            <img class="rounded-start-3" src=${ project.imgPath } alt=${ project.title }/>
-            <div class="card-content d-flex flex-column justify-content-between gap-1 px-3 py-4">
-                <div class="d-flex flex-column gap-3">
-                    <div class="d-flex flex-column gap-1">
-                        <h3 class="no-mb text-heading poppins-medium fs-5">${ project.title }</h3>
-                        <p id="project-stack" class="no-mb poppins-regular-italic">${ project.stack.join(', ') }</p>
-                        </div>
-                        <p id="project-desc" class="w-100 no-mb text-paragraph poppins-regular fs-6">${ project.description }</p>
-                    </div>
+            <div class="project-img-wrapper">
+                <img id="project-image" class="rounded-top-3" src=${ project.imgPath } alt=${ project.title }/>
+            </div>
+            <div class="d-flex flex-column justify-content-between gap-1 p-3">
+                <div class="d-flex flex-column gap-1">
+                    <h3 class="no-mb text-heading poppins-medium fs-5">${ project.title }</h3>
+                    <p id="project-stack" class="no-mb poppins-regular-italic">${ project.stack.join(', ') }</p>
+                </div>
+                    <p id="project-desc" class="w-100 no-mb text-paragraph poppins-regular fs-6">${ project.description }</p>
                 <div class="d-flex gap-4 mt-1">
                     ${ project.githubLink ? `<a id='github-btn' class='rounded-3 py-1 px-4' target='_blank' href=${ project.githubLink }>Github</a>` : "<p class='no-mb text-paragraph fs-6'>Coming Soon!</p>" }
                     ${ project.demoLink ? `<a id='demo-btn' class='rounded-3 py-1 px-4'target='_blank' href=${ project.demoLink }>Demo</a>` : "" }
                 </div>
-
             </div>
         `
 
-        card.className = 'project-card d-flex rounded-3 gap-2'
+        card.className = 'project-card p-0 col-6 d-flex flex-column rounded-3 justift-content-between'
         projectContainer.appendChild(card)
     })
 }
@@ -124,7 +123,7 @@ const appendToolTips = () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const pagePath = window.location.pathname
-    const currentPage = pagePath.split("/").pop()
+    const currentPage = pagePath.split("/").pop() || 'index.php'
     if (currentPage === 'projects.php') {
         loadProjects()
     }
@@ -132,10 +131,11 @@ document.addEventListener("DOMContentLoaded", () => {
     // Align time updates (in minutes)
     syncMinuteRefresh()
     appendToolTips()
+    styleActiveNavItem()
 })
 
 window.addEventListener("resize", () => {
-    // Style only on 768px above
+    // Style only on 768px above - else disable styling
     if (window.innerWidth > 768) {
         styleActiveNavItem()
     } else {
