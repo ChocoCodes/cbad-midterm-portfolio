@@ -132,5 +132,8 @@ document.addEventListener("DOMContentLoaded", () => {
     // Align time updates (in minutes)
     syncMinuteRefresh()
     appendToolTips()
-    styleActiveNavItem()
+    // Style only on 768px above
+    if (window.innerWidth > 768) {
+        styleActiveNavItem()
+    }
 })

@@ -222,7 +222,6 @@ button {
 .main-container {
     background-color: var(--color-main);
     z-index: 1;
-    margin-left: calc(100% * (2 / 12));
 }
 
 .main-content {
@@ -434,9 +433,10 @@ button {
     #sidebar {
         background-color: var(--color-sidebar);
         height: 100vh;
+        position: fixed;
     }
 
     .main-container {
-        margin-left: 0;
+        margin-left: calc(100% * (2 / 12));
     }
 }
