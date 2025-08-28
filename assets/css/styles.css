@@ -154,6 +154,9 @@ button {
     filter: brightness(0) saturate(100%) invert(53%) sepia(84%) saturate(419%) hue-rotate(89deg) brightness(98%) contrast(94%);
 }
 
+.fs-md-2 {
+    font-size: 1rem;
+}
 /* Sidebar Styles */
 #sidebar {
     background-color: var(--color-sidebar);
@@ -383,7 +386,7 @@ button {
     transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
-.hobby:hover .overlay{
+.hobby:hover .overlay {
     opacity: 1;
     transform: translateY(0);
 }
@@ -422,6 +425,7 @@ button {
     color: var(--text-subheading);
     background-color: var(--color-main);
     transition: background-color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #github-btn:hover {
@@ -480,5 +484,18 @@ button {
 
     .about-section {
         width: 75%;
+    }
+
+    #sidebar-header {
+        align-items: center;
+    }
+
+    #project-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .fs-md-2 {
+        font-size: 2rem;
     }
 }
