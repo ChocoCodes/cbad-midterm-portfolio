@@ -9,9 +9,9 @@
     <div class="col-12 col-md-10 main-container overflow-y-auto overflow-x-hidden position-relative d-flex justify-content-between align-items-center p-3">
         <div style="--glow-width: 23rem; --glow-height: 23rem; --glow-alpha: 0.85; top: -20%; right: -10%;" class="background-glow position-absolute rounded-circle d-none d-md-block"></div>
         <div class="main-content w-75 mx-auto d-flex flex-column">
+            <!-- Page Header Section --> 
+            <p class="poppins-medium text-heading fs-2"><?= $PageHeader ?></p>
             <div class="d-flex gap-3 flex-column align-items-center">
-                <!-- Page Header Section --> 
-                <p class="poppins-medium text-heading fs-2"><?= $PageHeader ?></p>
                 <!-- Hero Section -->
                 <div class="d-flex hero align-items-center flex-column flex-md-row">
                     <img id="hero-image" class="rounded-circle" src="assets/img/image-port.jpg" alt="Image of John Octavio">

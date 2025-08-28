@@ -16,9 +16,9 @@ const loadProjects = () => {
             <div class="project-img-wrapper">
                 <img id="project-image" class="rounded-top-3" src=${ project.imgPath } alt=${ project.title }/>
             </div>
-            <div class="d-flex flex-column justify-content-between gap-2 p-3">
+            <div class="d-flex flex-column justify-content-between gap-3 p-3">
                 <div class="d-flex flex-column">
-                    <h3 class="no-mb text-heading poppins-medium fs-5 fs-md-2">${ project.title }</h3>
+                    <h3 class="no-mb text-heading poppins-medium fs-4">${ project.title }</h3>
                     <p id="project-stack" class="no-mb poppins-regular-italic">${ project.stack.join(', ') }</p>
                 </div>
                     <p id="project-desc" class="w-100 no-mb text-paragraph poppins-regular fs-6">${ project.description }</p>
@@ -29,7 +29,7 @@ const loadProjects = () => {
             </div>
         `
 
-        card.className = 'project-card p-0 col-6 d-flex flex-column rounded-3 justift-content-between'
+        card.className = 'project-card col-12 p-0 d-flex flex-column rounded-3 justify-content-between overflow-hidden'
         projectContainer.appendChild(card)
     })
 }
@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Align time updates (in minutes)
     syncMinuteRefresh()
     appendToolTips()
-    if(window.innerWidth > 768) {
+    if(window.innerWidth > 768) { 
         styleActiveNavItem()
     }
 })

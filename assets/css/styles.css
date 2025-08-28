@@ -401,6 +401,11 @@ button {
 }
 
 /* Project Styles */
+#project-container {
+    width: 100%;
+    margin: 0;
+}
+
 .project-card {
     background: var(--color-sidebar);
     backdrop-filter: blur(5px);
@@ -412,12 +417,21 @@ button {
 
 .project-img-wrapper {
     width: 100%;
+    height: 65%;
+    display: inline-block;
+    overflow: clip;
 }
 
 #project-image {
     width: 100%;
-    height: 165px;
+    height: auto;
     object-fit: cover;
+    transition: transform 0.2s ease-out;
+    will-change: transform;
+}
+
+#project-image:hover {
+    transform:scale(1.1);
 }
 
 #github-btn  {
@@ -453,6 +467,7 @@ button {
 #project-desc {
     font-size: 0.75rem;
 }
+
 
 /* Media Queries */
 @media(min-width: 768px) {
@@ -493,9 +508,5 @@ button {
     #project-container {
         width: 90%;
         margin: 0 auto;
-    }
-
-    .fs-md-2 {
-        font-size: 2rem;
     }
 }
