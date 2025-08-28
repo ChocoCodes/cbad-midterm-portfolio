@@ -29,7 +29,7 @@ const loadProjects = () => {
             </div>
         `
 
-        card.className = 'project-card col-12 p-0 d-flex flex-column rounded-3 justify-content-between'
+        card.className = 'project-card col-12 p-0 d-flex flex-column rounded-3 justify-content-between overflow-hidden'
         projectContainer.appendChild(card)
     })
 }

@@ -13,7 +13,7 @@
         <!-- Sidebar Footer -->
         <div class="w-100 d-flex flex-column gap-3">
             <!-- Sidebar Nav Items -->
-            <ul class="sidebar-nav d-flex flex-column gap-1 gap-md-2 text-center text-md-start">
+            <ul class="sidebar-nav d-flex flex-md-column mx-auto mx-md-0 gap-4 gap-md-2  gap-md-2 text-center text-md-start">
                 <?php 
                     foreach($META as $Key => $Value) {
                         echo "
