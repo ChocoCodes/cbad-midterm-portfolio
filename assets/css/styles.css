@@ -398,6 +398,11 @@ button {
 }
 
 /* Project Styles */
+#project-container {
+    width: 100%;
+    margin: 0;
+}
+
 .project-card {
     background: var(--color-sidebar);
     backdrop-filter: blur(5px);
@@ -413,7 +418,6 @@ button {
 
 #project-image {
     width: 100%;
-    height: 165px;
     object-fit: cover;
 }
 
@@ -480,5 +484,14 @@ button {
 
     .about-section {
         width: 75%;
+    }
+
+    #sidebar-header {
+        align-items: center;
+    }
+
+    #project-container {
+        width: 90%;
+        margin: 0 auto;
     }
 }
