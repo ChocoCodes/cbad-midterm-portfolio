@@ -426,6 +426,7 @@ button {
     color: var(--text-subheading);
     background-color: var(--color-main);
     transition: background-color 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 #github-btn:hover {
@@ -453,6 +454,7 @@ button {
 #project-desc {
     font-size: 0.75rem;
 }
+
 
 /* Media Queries */
 @media(min-width: 768px) {
