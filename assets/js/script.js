@@ -16,20 +16,20 @@ const loadProjects = () => {
             <div class="project-img-wrapper">
                 <img id="project-image" class="rounded-top-3" src=${ project.imgPath } alt=${ project.title }/>
             </div>
-            <div class="d-flex flex-column justify-content-between gap-3 p-3">
+            <div class="d-flex flex-column justify-content-between gap-2 p-3">
                 <div class="d-flex flex-column">
                     <h3 class="no-mb text-heading poppins-medium fs-4">${ project.title }</h3>
                     <p id="project-stack" class="no-mb poppins-regular-italic">${ project.stack.join(', ') }</p>
                 </div>
                     <p id="project-desc" class="w-100 no-mb text-paragraph poppins-regular fs-6">${ project.description }</p>
                 <div class="d-flex gap-4">
-                    ${ project.githubLink ? `<a id='github-btn' class='rounded-3 py-1 px-4' target='_blank' href=${ project.githubLink }>Github</a>` : "<p class='no-mb text-paragraph fs-6'>Coming Soon!</p>" }
-                    ${ project.demoLink ? `<a id='demo-btn' class='rounded-3 py-1 px-4'target='_blank' href=${ project.demoLink }>Demo</a>` : "" }
+                    ${ project.githubLink ? `<a id='github-btn' class='rounded-3 py-2 px-4 fs-5' target='_blank' href=${ project.githubLink }>Github</a>` : "<p class='no-mb text-paragraph fs-6'>Coming Soon!</p>" }
+                    ${ project.demoLink ? `<a id='demo-btn' class='rounded-3 py-2 px-4 fs-5'target='_blank' href=${ project.demoLink }>Demo</a>` : "" }
                 </div>
             </div>
         `
 
-        card.className = 'project-card col-12 p-0 d-flex flex-column rounded-3 justify-content-between overflow-hidden'
+        card.className = 'project-card col-12 p-0 d-flex flex-column rounded-3 overflow-hidden'
         projectContainer.appendChild(card)
     })
 }
