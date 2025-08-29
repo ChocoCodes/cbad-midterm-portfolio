@@ -32,7 +32,7 @@
                 <!-- Marquee Section -->
                 <div class="w-100 mx-auto marquee-wrapper marquee-fadeout">
                     <div class="marquee-view">
-                        <div class="marquee-content d-flex">
+                        <div class="marquee-content d-flex py-2">
                             <i data-bs-toggle="tooltip" title="React" class="fa-brands fa-react fa-4x icon-accent"></i>
                             <img data-bs-toggle="tooltip" title="Next.js" class="custom-icon-stack icon-accent" src="assets/img/svgs/next-js.svg" alt="NextJS">
                             <img data-bs-toggle="tooltip" title="TypeScript" class="custom-icon-stack icon-accent" src="assets/img/svgs/typescript.svg" alt="TypeScript">
@@ -41,7 +41,7 @@
                             <i data-bs-toggle="tooltip" title="CSS" class="fa-brands fa-css3-alt fa-4x icon-accent"></i>
                             <img data-bs-toggle="tooltip" title="MySQL" class="custom-icon-stack icon-accent" src="assets/img/svgs/mysql.svg" alt="MySQL">
                             <i data-bs-toggle="tooltip" title="Python" class="fa-brands fa-python fa-4x icon-accent"></i>
-                            <i data-bs-toggle="tooltip" title="Github" class="fa-brands fa-github fa-4x icon-accent"></i>
+                            <i data-bs-toggle="tooltip" title="Git" class="fa-brands fa-git-alt fa-4x icon-accent"></i>
                             <img data-bs-toggle="tooltip" title="Arduino" class="custom-icon-stack icon-accent" src="assets/img/svgs/arduino.svg" alt="Arduino">
                             <!-- Duplicates -->
                             <i aria-hidden="true" data-bs-toggle="tooltip" title="React" class="fa-brands fa-react fa-4x icon-accent"></i>
@@ -52,7 +52,7 @@
                             <i aria-hidden="true" data-bs-toggle="tooltip" title="CSS" class="fa-brands fa-css3-alt fa-4x icon-accent"></i>
                             <img aria-hidden="true"  data-bs-toggle="tooltip" title="MySQL" class="custom-icon-stack icon-accent" src="assets/img/svgs/mysql.svg" alt="MySQL">
                             <i aria-hidden="true" data-bs-toggle="tooltip" title="Python" class="fa-brands fa-python fa-4x icon-accent"></i>
-                            <i aria-hidden="true"  data-bs-toggle="tooltip" title="Github" class="fa-brands fa-github fa-4x icon-accent"></i>
+                            <i aria-hidden="true"  data-bs-toggle="tooltip" title="Git" class="fa-brands fa-git-alt fa-4x icon-accent"></i>
                             <img aria-hidden="true"  data-bs-toggle="tooltip" title="Arduino" class="custom-icon-stack icon-accent" src="assets/img/svgs/arduino.svg" alt="Arduino">
                         </div>
                     </div>

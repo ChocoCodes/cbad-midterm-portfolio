@@ -18,13 +18,15 @@ const loadProjects = () => {
             </div>
             <div class="d-flex flex-column justify-content-between gap-3 p-3">
                 <div class="d-flex flex-column">
-                    <h3 class="no-mb text-heading poppins-medium fs-4">${ project.title }</h3>
-                    <p id="project-stack" class="no-mb poppins-regular-italic">${ project.stack.join(', ') }</p>
+                    <h3 class="text-heading poppins-medium fs-3">${ project.title }</h3>
+                    <p id="project-stack" class="poppins-regular-italic fs-5">${ project.stack.join(', ') }</p>
                 </div>
-                    <p id="project-desc" class="w-100 no-mb text-paragraph poppins-regular fs-6">${ project.description }</p>
-                <div class="d-flex gap-4">
-                    ${ project.githubLink ? `<a id='github-btn' class='rounded-3 py-1 px-4' target='_blank' href=${ project.githubLink }>Github</a>` : "<p class='no-mb text-paragraph fs-6'>Coming Soon!</p>" }
-                    ${ project.demoLink ? `<a id='demo-btn' class='rounded-3 py-1 px-4'target='_blank' href=${ project.demoLink }>Demo</a>` : "" }
+                    <p id="project-desc" class="w-100 text-paragraph poppins-regular fs-6">${ project.description }</p>
+                <div class="d-flex flex-wrap gap-4">
+                    ${ project.githubLink ? `<a id='github-btn' class='rounded-3 py-2 px-4 fs-5' target='_blank' href=${ project.githubLink }>Github</a>` : 
+                                            "<p id='coming-soon' class='rounded-3 py-2 px-3 fs-5 text-paragraph fs-6'>Coming Soon!</p>" 
+                    }
+                    ${ project.demoLink ? `<a id='demo-btn' class='rounded-3 py-2 px-4 fs-5'target='_blank' href=${ project.demoLink }>Demo</a>` : "" }
                 </div>
             </div>
         `
