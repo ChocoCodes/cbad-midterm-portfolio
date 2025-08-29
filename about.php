@@ -10,12 +10,12 @@
         <div style="--glow-width: 23rem; --glow-height: 23rem; --glow-alpha: 0.85; top: -10%; right: -10%;" class="background-glow position-absolute rounded-circle"></div>
         <div style="--glow-width: 20rem; --glow-height: 20rem; --glow-alpha: 0.65; left: 3%; bottom: 35%;" class="background-glow position-absolute rounded-circle d-none d-md-block"></div>
         <div class="main-content about-section mx-auto d-flex flex-column overflow-y-auto position-relative">
-            <p class="poppins-medium text-heading fs-2"><?= $PageHeader ?></p>
+            <p class="poppins-medium text-heading fs-2 apply-fade-in"><?= $PageHeader ?></p>
             <div class="d-flex gap-4 flex-column">
                 <!-- Intro Container --> 
                 <div class="d-flex gap-3 flex-column align-items-center">
                     <!-- Page Header Section --> 
-                    <div id="intro" class="d-flex flex-column flex-md-row align-items-center gap-4">
+                    <div id="intro" class="d-flex flex-column flex-md-row align-items-center gap-4 apply-fade-in" style="--delay: 0.2s">
                         <img id="hero-image" class="rounded-circle" src="assets/img/image-port.jpg" alt="Image of John Octavio">
                         <div class="d-flex flex-column justify-content-center gap-3 p-2">
                             <div class="d-flex flex-column gap-1">
@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <!-- Experience/Education Container --> 
-                <div class="d-flex flex-column gap-4">
+                <div class="d-flex flex-column gap-4 apply-fade-in" style="--delay: 0.4s">
                     <div id="toggle-button-container" class="w-100 d-flex gap-2 justify-content-between rounded-3 p-2">
                         <button id="exp-btn" class="w-50 active-section rounded-3 fs-4 no-btn-border" onclick="showExperience()">Experience</button>
                         <button id="edu-btn" class="w-50 default-section rounded-3 fs-4 no-btn-border" onclick="showEducation()">Education</button>
@@ -92,8 +92,8 @@
                 </div>
                 <!-- Hobbies Container --> 
                 <div class="d-flex flex-column gap-4 overflow-y-hidden">
-                    <p class="poppins-medium text-heading fs-2">Hobbies</p>
-                    <div class="w-100 d-flex flex-column flex-md-row">
+                    <p class="poppins-medium text-heading fs-2 apply-fade-in" style="--delay: 0.6s">Hobbies</p>
+                    <div class="w-100 d-flex flex-column flex-md-row apply-fade-in" style="--delay: 0.8s">
                         <div class="hobby position-relative">
                             <img id="hobby-first" src="assets/img/code.jpg" alt="Coding">
                             <div class="overlay position-absolute w-100 h-100">

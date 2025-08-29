@@ -10,10 +10,10 @@
         <div style="--glow-width: 23rem; --glow-height: 23rem; --glow-alpha: 0.85; top: -20%; right: -10%;" class="background-glow position-absolute rounded-circle d-none d-md-block"></div>
         <div class="main-content w-75 mx-auto d-flex flex-column">
             <!-- Page Header Section --> 
-            <p class="poppins-medium text-heading fs-2"><?= $PageHeader ?></p>
+            <p class="poppins-medium text-heading fs-2 apply-fade-in"><?= $PageHeader ?></p>
             <div class="d-flex gap-3 flex-column align-items-center">
                 <!-- Hero Section -->
-                <div class="d-flex hero align-items-center flex-column flex-md-row">
+                <div class="d-flex hero align-items-center flex-column flex-md-row apply-fade-in" style="--delay: 0.2s;">
                     <img id="hero-image" class="rounded-circle" src="assets/img/image-port.jpg" alt="Image of John Octavio">
                     <div class="d-flex flex-column gap-3 text-center text-md-start">
                         <h3 class="text-heading poppins-regular mb-0">Full Stack Developer</h3>
@@ -28,9 +28,9 @@
             </div>
             <div class="d-flex gap-3 flex-column">
                 <!-- Tech Stack Section -->
-                <p class="poppins-medium text-heading fs-2">Tech Stack</p>
+                <p class="poppins-medium text-heading fs-2 apply-fade-in" style="--delay: 0.4s">Tech Stack</p>
                 <!-- Marquee Section -->
-                <div class="w-100 mx-auto marquee-wrapper marquee-fadeout">
+                <div class="w-100 mx-auto marquee-wrapper marquee-fadeout apply-fade-in" style="--delay: 0.6s">
                     <div class="marquee-view">
                         <div class="marquee-content d-flex py-2">
                             <i data-bs-toggle="tooltip" title="React" class="fa-brands fa-react fa-4x icon-accent"></i>

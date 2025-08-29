@@ -10,9 +10,9 @@
         <div style="--glow-width: 23rem; --glow-height: 23rem; --glow-alpha: 0.85; top: -5%; right: -10%;" class="background-glow position-absolute rounded-circle"></div>
         <div class="project-section main-content mx-auto d-flex flex-column gap-2 position-relative">
             <!-- Page Header Section --> 
-            <p class="poppins-medium text-heading fs-2"><?= $PageHeader ?></p>
+            <p class="poppins-medium text-heading fs-2 apply-fade-in"><?= $PageHeader ?></p>
             <!-- Project Cards Container -->
-            <div id="project-container" class="row g-4 px-2"></div>
+            <div id="project-container" class="row g-4 px-2 apply-fade-in" style="--delay: 0.2s"></div>
         </div>    
     </div>
 <?php include_once 'includes/footer.php'?>

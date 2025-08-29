@@ -3,7 +3,7 @@
 ?>
 
 <div id="sidebar" class="col-12 col-md-2 d-md-flex justify-content-between poppins-regular mh-100">
-    <div id="sidebar-container" class="w-100 h-100 d-flex flex-column gap-2 gap-md-0 justify-content-between">
+    <div id="sidebar-container" class="w-100 h-100 d-flex flex-column gap-2 gap-md-0 justify-content-between apply-slide-in">
         <!-- Sidebar Header -->
         <div id="sidebar-header" class="d-flex mx-auto">
             <img src="assets/img/svgs/logo.svg" alt="Logo">
