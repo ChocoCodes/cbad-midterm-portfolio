@@ -41,7 +41,7 @@
                             <i data-bs-toggle="tooltip" title="CSS" class="fa-brands fa-css3-alt fa-4x icon-accent"></i>
                             <img data-bs-toggle="tooltip" title="MySQL" class="custom-icon-stack icon-accent" src="assets/img/svgs/mysql.svg" alt="MySQL">
                             <i data-bs-toggle="tooltip" title="Python" class="fa-brands fa-python fa-4x icon-accent"></i>
-                            <i data-bs-toggle="tooltip" title="Github" class="fa-brands fa-github fa-4x icon-accent"></i>
+                            <i data-bs-toggle="tooltip" title="Git" class="fa-brands fa-git-alt fa-4x icon-accent"></i>
                             <img data-bs-toggle="tooltip" title="Arduino" class="custom-icon-stack icon-accent" src="assets/img/svgs/arduino.svg" alt="Arduino">
                             <!-- Duplicates -->
                             <i aria-hidden="true" data-bs-toggle="tooltip" title="React" class="fa-brands fa-react fa-4x icon-accent"></i>
@@ -52,7 +52,7 @@
                             <i aria-hidden="true" data-bs-toggle="tooltip" title="CSS" class="fa-brands fa-css3-alt fa-4x icon-accent"></i>
                             <img aria-hidden="true"  data-bs-toggle="tooltip" title="MySQL" class="custom-icon-stack icon-accent" src="assets/img/svgs/mysql.svg" alt="MySQL">
                             <i aria-hidden="true" data-bs-toggle="tooltip" title="Python" class="fa-brands fa-python fa-4x icon-accent"></i>
-                            <i aria-hidden="true"  data-bs-toggle="tooltip" title="Github" class="fa-brands fa-github fa-4x icon-accent"></i>
+                            <i aria-hidden="true"  data-bs-toggle="tooltip" title="Git" class="fa-brands fa-git-alt fa-4x icon-accent"></i>
                             <img aria-hidden="true"  data-bs-toggle="tooltip" title="Arduino" class="custom-icon-stack icon-accent" src="assets/img/svgs/arduino.svg" alt="Arduino">
                         </div>
                     </div>

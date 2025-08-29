@@ -10,16 +10,22 @@
         <div style="--glow-width: 23rem; --glow-height: 23rem; --glow-alpha: 0.85; top: -10%; right: -10%;" class="background-glow position-absolute rounded-circle"></div>
         <div style="--glow-width: 20rem; --glow-height: 20rem; --glow-alpha: 0.65; left: 3%; bottom: 35%;" class="background-glow position-absolute rounded-circle d-none d-md-block"></div>
         <div class="main-content about-section mx-auto d-flex flex-column overflow-y-auto position-relative">
-            <div class="d-flex gap-3 flex-column">
-                <p class="poppins-medium text-heading fs-2"><?= $PageHeader ?></p>
+            <p class="poppins-medium text-heading fs-2"><?= $PageHeader ?></p>
+            <div class="d-flex gap-4 flex-column">
                 <!-- Intro Container --> 
                 <div class="d-flex gap-3 flex-column align-items-center">
                     <!-- Page Header Section --> 
-                    <div id="intro" class="w-md-75 d-flex flex-column flex-md-row align-items-center gap-5">
+                    <div id="intro" class="d-flex flex-column flex-md-row align-items-center gap-4">
                         <img id="hero-image" class="rounded-circle" src="assets/img/image-port.jpg" alt="Image of John Octavio">
-                        <div class="d-flex flex-column justify-content-center gap-2 p-2">
-                            <h3 class="poppins-semibold text-accent fs-3 fs-md-2 no-mb">John Roland Octavio</h3>
-                            <h4 class="poppins-medium text-subheading fs-4 fs-md-5">Third Year CS Student</h4>
+                        <div class="d-flex flex-column justify-content-center gap-3 p-2">
+                            <div class="d-flex flex-column gap-1">
+                                <h3 class="poppins-semibold text-accent fs-3 fs-md-2">John Roland Octavio</h3>
+                                <h4 class="poppins-medium text-subheading fs-4 fs-md-5">Third Year CS Student</h4>
+                                <div class="d-flex gap-2 text-subheading align-items-center">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p class="fs-6">Bacolod City, Philippines</p>
+                                </div>
+                            </div>
                             <p class="text-paragraph fs-6">Over the past 3 years, I’ve built projects using React, TypeScript, and SQL, including dynamic web apps and embedded systems.</p>
                             <div class="d-flex mx-auto mx-md-0 align-items-center gap-4">
                                 <a class="rounded-5 d-flex gap-2 justify-content-center align-items-center resume-btn p-2" href="assets/files/resume.pdf" target="_blank">
@@ -86,10 +92,10 @@
                 </div>
                 <!-- Hobbies Container --> 
                 <div class="d-flex flex-column gap-4 overflow-y-hidden">
-                    <p class="poppins-medium text-heading fs-2 no-mb">Hobbies</p>
+                    <p class="poppins-medium text-heading fs-2">Hobbies</p>
                     <div class="w-100 d-flex flex-column flex-md-row">
                         <div class="hobby position-relative">
-                            <img class="rounded-start-4" src="assets/img/code.jpg" alt="Coding">
+                            <img id="hobby-first" src="assets/img/code.jpg" alt="Coding">
                             <div class="overlay position-absolute w-100 h-100">
                                 <h2 class="poppins-semibold text-subheading px-3 py-2">CODING</h2>
                                 <p class="px-3 poppins-regular text-paragraph fs-6">Currently finishing my Harvard CS50x final project - Expense Tracking System.</p>
@@ -103,7 +109,7 @@
                             </div>
                         </div>
                         <div class="hobby position-relative">
-                            <img class="rounded-end-4" src="assets/img/lego.jpg" alt="Lego">
+                            <img id="hobby-last" src="assets/img/lego.jpg" alt="Lego">
                             <div class="overlay position-absolute">
                                 <h2 class="poppins-semibold text-subheading px-3 py-2">LEGO</h2>
                                 <p class="px-3 poppins-regular text-paragraph fs-6">I like to build LEGO cars when I have free time (and money)!</p>
