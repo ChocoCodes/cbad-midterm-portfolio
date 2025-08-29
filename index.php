@@ -32,7 +32,7 @@
                 <!-- Marquee Section -->
                 <div class="w-100 mx-auto marquee-wrapper marquee-fadeout">
                     <div class="marquee-view">
-                        <div class="marquee-content d-flex">
+                        <div class="marquee-content d-flex py-2">
                             <i data-bs-toggle="tooltip" title="React" class="fa-brands fa-react fa-4x icon-accent"></i>
                             <img data-bs-toggle="tooltip" title="Next.js" class="custom-icon-stack icon-accent" src="assets/img/svgs/next-js.svg" alt="NextJS">
                             <img data-bs-toggle="tooltip" title="TypeScript" class="custom-icon-stack icon-accent" src="assets/img/svgs/typescript.svg" alt="TypeScript">
