@@ -289,6 +289,11 @@ p {
     z-index: 2;
 }
 
+#notice-banner {
+    background-color: var(--color-accent);
+    color: var(--color-main);
+}
+
 /* Marquee Styles */
 .marquee-view {
     overflow: clip;
@@ -367,11 +372,6 @@ p {
     list-style: none;    
     margin: 0;
     padding-left: 0;
-}
-
-.experience-item p,
-.education-item p {
-    margin-bottom: 0;
 }
 
 .hobby {

@@ -6,15 +6,18 @@
     include_once 'includes/head.php';
     include_once 'includes/menu.php';
 ?>
-    <div class="col-12 col-md-10 main-container overflow-y-auto overflow-x-hidden position-relative d-flex justify-content-between align-items-center p-3">
+    <div class="col-12 col-md-10 main-container overflow-y-auto overflow-x-hidden position-relative d-flex justify-content-between align-items-center px-0 py-3">
+        <div id="notice-banner" class="w-100 position-absolute top-0 left-0">
+            <p class="p-2 fs-6 text-center">This is a beta version of my portfolio site. Upgrades will be implemented soon.</p>
+        </div>
         <div style="--glow-width: 23rem; --glow-height: 23rem; --glow-alpha: 0.85; top: -20%; right: -10%;" class="background-glow position-absolute rounded-circle d-none d-md-block"></div>
-        <div class="main-content w-75 mx-auto d-flex flex-column">
+        <div class="main-content w-75 mx-auto d-flex flex-column px-0">
             <!-- Page Header Section --> 
             <p class="poppins-medium text-heading fs-2 apply-fade-in"><?= $PageHeader ?></p>
             <div class="d-flex gap-3 flex-column align-items-center">
                 <!-- Hero Section -->
                 <div class="d-flex hero align-items-center flex-column flex-md-row apply-fade-in" style="--delay: 0.2s;">
-                    <img id="hero-image" class="rounded-circle" src="assets/img/image-port.jpg" alt="Image of John Octavio">
+                    <img id="hero-image" class="rounded-circle" src="https://i.imgur.com/oHELf6g.jpeg" alt="Image of John Octavio">
                     <div class="d-flex flex-column gap-3 text-center text-md-start">
                         <h3 class="text-heading poppins-regular mb-0">Full Stack Developer</h3>
                         <h1 class="poppins-semibold text-accent lh-base mb-0">John Roland </br>Octavio</h1>

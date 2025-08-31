@@ -16,7 +16,7 @@
                 <div class="d-flex gap-3 flex-column align-items-center">
                     <!-- Page Header Section --> 
                     <div id="intro" class="d-flex flex-column flex-md-row align-items-center gap-4 apply-fade-in" style="--delay: 0.2s">
-                        <img id="hero-image" class="rounded-circle" src="assets/img/image-port.jpg" alt="Image of John Octavio">
+                        <img id="hero-image" class="rounded-circle" src="https://i.imgur.com/oHELf6g.jpeg" alt="Image of John Octavio">
                         <div class="d-flex flex-column justify-content-center gap-3 p-2">
                             <div class="d-flex flex-column gap-1">
                                 <h3 class="poppins-semibold text-accent fs-3 fs-md-2">John Roland Octavio</h3>
@@ -28,7 +28,7 @@
                             </div>
                             <p class="text-paragraph fs-6">Over the past 3 years, I’ve built projects using React, TypeScript, and SQL, including dynamic web apps and embedded systems.</p>
                             <div class="d-flex mx-auto mx-md-0 align-items-center gap-4">
-                                <a class="rounded-5 d-flex gap-2 justify-content-center align-items-center resume-btn p-2" href="assets/files/resume.pdf" target="_blank">
+                                <a class="rounded-5 d-flex gap-2 justify-content-center align-items-center resume-btn p-2" href="https://drive.google.com/file/d/1gKq19gw39TO4BmcALJEv9L0Ymn6_uhfg/view?usp=sharing" target="_blank">
                                     Resume<span><i class="fa-solid fa-download"></i></span>
                                 </a>
                                 <a href="https://github.com/ChocoCodes" target="_blank">
@@ -95,21 +95,21 @@
                     <p class="poppins-medium text-heading fs-2 apply-fade-in" style="--delay: 0.6s">Hobbies</p>
                     <div class="w-100 d-flex flex-column flex-md-row apply-fade-in" style="--delay: 0.8s">
                         <div class="hobby position-relative">
-                            <img id="hobby-first" src="assets/img/code.jpg" alt="Coding">
+                            <img id="hobby-first" src="https://i.imgur.com/oe65CD2.jpeg" alt="Coding">
                             <div class="overlay position-absolute w-100 h-100">
                                 <h2 class="poppins-semibold text-subheading px-3 py-2">CODING</h2>
                                 <p class="px-3 poppins-regular text-paragraph fs-6">Currently finishing my Harvard CS50x final project - Expense Tracking System.</p>
                             </div>
                         </div>
                         <div class="hobby position-relative">
-                            <img src="assets/img/basketball.jpg" alt="Basketball">
+                            <img src="https://i.imgur.com/LIMsu4i.jpeg" alt="Basketball">
                             <div class="overlay position-absolute">
                                 <h2 class="poppins-semibold text-subheading px-3 py-2">BASKETBALL</h2>
                                 <p class="px-3 poppins-regular text-paragraph fs-6">Played under the UNO-R Rams basketball team (2017-2023).</p>
                             </div>
                         </div>
                         <div class="hobby position-relative">
-                            <img id="hobby-last" src="assets/img/lego.jpg" alt="Lego">
+                            <img id="hobby-last" src="https://i.imgur.com/M3TVjD6.jpeg" alt="Lego">
                             <div class="overlay position-absolute">
                                 <h2 class="poppins-semibold text-subheading px-3 py-2">LEGO</h2>
                                 <p class="px-3 poppins-regular text-paragraph fs-6">I like to build LEGO cars when I have free time (and money)!</p>
